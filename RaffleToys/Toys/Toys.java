@@ -43,5 +43,9 @@ public class Toys {
     public Integer getWeight() {
         return weight;
     }
-    
+    @Override
+    @Override
+    public String toString() {       
+        return String.format("Идентафикатор: %s\n Название игрушки: %s,\n Колличество: %s,\n Вес игрушки: %s", id,toysName,quantity,weight);
+    }
 }
