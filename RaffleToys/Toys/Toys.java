@@ -3,10 +3,10 @@ package RaffleToys.Toys;
 public class Toys {
     private String id ="";
     private String toysName;
-    private Integer quantity;
-    private Integer weight;
+    private String quantity;
+    private String weight;
 
-    public Toys( String toysName, Integer quantity, Integer weight){
+    public Toys( String toysName, String quantity, String weight){
         this.toysName = toysName;
         this.quantity = quantity;
         this.weight = weight;
@@ -20,11 +20,11 @@ public class Toys {
         this.toysName = toysName;
     }
 
-    public void setQuantity(Integer quantity) {
+    public void setQuantity(String quantity) {
         this.quantity = quantity;
     }
 
-    public void setWeight(Integer weight) {
+    public void setWeight(String weight) {
         this.weight = weight;
     }
 
@@ -36,11 +36,11 @@ public class Toys {
         return toysName;
     }
 
-    public Integer getQuantity() {
+    public String getQuantity() {
         return quantity;
     }
 
-    public Integer getWeight() {
+    public String getWeight() {
         return weight;
     }
     @Override
