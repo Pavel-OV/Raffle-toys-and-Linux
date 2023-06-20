@@ -15,6 +15,10 @@ public class Toys {
         this(toysName,quantity,weight);
         this.id =id;
     }
+    public boolean issueQuantity(){
+        this.quantity--;
+        return quantity>0;
+    }
 
     public void setId(Integer id) {
         this.id = id;
@@ -24,9 +28,9 @@ public class Toys {
         this.toysName = toysName;
     }
 
-    public void setQuantity(Integer  quantity) {
-        this.quantity = quantity;
-    }
+    // public void setQuantity(Integer  quantity) {
+    //     this.quantity = quantity;
+    // }
 
     public void setWeight(Integer  weight) {
         this.weight = weight;
