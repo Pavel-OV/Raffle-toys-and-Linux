@@ -1,18 +1,22 @@
 package RaffleToys.Toys;
 
 public class Toys {
-    private String id ="";
+    private Integer id ;
     private String toysName;
-    private String quantity;
-    private String weight;
+    private Integer  quantity;
+    private Integer  weight;
 
-    public Toys( String toysName, String quantity, String weight){
+    public Toys( String toysName, Integer quantity, Integer  weight){
         this.toysName = toysName;
         this.quantity = quantity;
         this.weight = weight;
     }
+    public Toys( Integer id, String toysName, Integer  quantity, Integer  weight){
+        this(toysName,quantity,weight);
+        this.id =id;
+    }
 
-    public void setId(String id) {
+    public void setId(Integer id) {
         this.id = id;
     }
 
@@ -20,15 +24,15 @@ public class Toys {
         this.toysName = toysName;
     }
 
-    public void setQuantity(String quantity) {
+    public void setQuantity(Integer  quantity) {
         this.quantity = quantity;
     }
 
-    public void setWeight(String weight) {
+    public void setWeight(Integer  weight) {
         this.weight = weight;
     }
 
-    public String getId() {
+    public Integer getId() {
         return id;
     }
 
@@ -36,16 +40,22 @@ public class Toys {
         return toysName;
     }
 
-    public String getQuantity() {
+    public Integer  getQuantity() {
         return quantity;
     }
 
-    public String getWeight() {
-        return weight;
+    public Integer getWeight() {
+        return weight ;
     }
-    @Override
+    
     @Override
     public String toString() {       
-        return String.format("Идентафикатор: %s\n Название игрушки: %s,\n Колличество: %s,\n Вес игрушки: %s", id,toysName,quantity,weight);
+        return String.format("Идентафикатор: %d\n Название игрушки: %s\t Колличество: %d\t Вес игрушки: %d", id,toysName,quantity,weight);
     }
+    // @Override
+    // public String toString() {       
+    //     return String.format(" Название игрушки: %s,\n Колличество: %s,\n Вес игрушки: %s", getToysName(),getQuantity(),getWeight());
+    // }
+    
+    
 }
