@@ -14,9 +14,7 @@ public class Main {
 
         // Toys listOfRaffleToys = new Toys(null, null, null, null);
         // Toys prizeToys = new Toys(null, null, null, null);
-        System.out.println(
-                "Это магазин игрушек. Можно просмотреть список игрушек, некоторые параметры - вес краткое описание ");
-        System.out.println("Добавить игрушку, изменить вес  Выберете действие");
+        
 
         mart.addToys(new Toys(1, "Баба Яга", 3, 150))
                 .addToys(new Toys(2, "Змей Горыныч", 5, 300))
@@ -43,6 +41,8 @@ public class Main {
         System.out.println(mart.toString());
         // ViewUser view = new ViewUser();
         // view.run();
+
+        // организация розыгрыша и получение призовых игрушек
 
         List<Toys> prizeToys = new ArrayList<>();
         for (int i = 0; i < 5; i++) {
