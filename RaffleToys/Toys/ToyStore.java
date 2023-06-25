@@ -17,13 +17,6 @@ public class ToyStore {
         return this;
     }
 
-    // public boolean getWeight() {
-    // return false;
-    // }
-
-    // public boolean getQuantity() {
-    // return false;
-    // }
     public Toys searchToys(String stoysName) { // ищем игрушку по имени
 
         for (Toys item : toy) {

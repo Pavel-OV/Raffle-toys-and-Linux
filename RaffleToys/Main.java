@@ -6,16 +6,11 @@ import java.util.List;
 
 import RaffleToys.Toys.ToyStore;
 import RaffleToys.Toys.Toys;
-import RaffleToys.views.ViewUser;
+
 
 public class Main {
     public static void main(String[] args) {
         ToyStore mart = new ToyStore();
-
-        // Toys listOfRaffleToys = new Toys(null, null, null, null);
-        // Toys prizeToys = new Toys(null, null, null, null);
-        
-
         mart.addToys(new Toys(1, "Баба Яга", 3, 150))
                 .addToys(new Toys(2, "Змей Горыныч", 5, 300))
                 .addToys(new Toys(3, "Корабль", 2, 150))
@@ -24,8 +19,8 @@ public class Main {
                 .addToys(new Toys(6, "Кукла", 3, 150))
                 .addToys(new Toys(7, "Машина", 3, 150))
                 .addToys(new Toys(8, "Скакалка", 3, 150));
-        System.out.println(mart.toString());
-       
+        // System.out.println("Первоночальный список игрушек");
+        // System.out.println(mart.toString());    
        
 
         mart.editToysWeight(5, 100);
@@ -36,12 +31,9 @@ public class Main {
         mart.editToysWeight(6, 180);
         mart.editToysWeight(7, 210);
         mart.editToysWeight(8, 85);
-
-        
+        System.out.println("Список игрушек после изменения в веса");        
         System.out.println(mart.toString());
-        // ViewUser view = new ViewUser();
-        // view.run();
-
+        
         // организация розыгрыша и получение призовых игрушек
 
         List<Toys> prizeToys = new ArrayList<>();
